@@ -16,7 +16,6 @@ export default function Navbar() {
       <div className="md:hidden   absolute right-8 top-7">
         <FontAwesomeIcon
           icon={faBars}
-          
           className="bold text-white cursor-pointer font-bold text-2xl"
           onClick={toggleMenu}
         />
@@ -31,22 +30,20 @@ export default function Navbar() {
         </Link>
 
         <div
-          className={`max-md:bg-black max-md:w-9/12 max-md:h-screen max-md:absolute max-md:left-0 max-md:top-20  transition-transform duration-6000 ease-in-out transform ${isOpen ? "max-md:translate-x-300" : "max-md:-translate-x-full"
-            }  px-4 py-2  ${isOpen ? "" : "opacity-none md:block"}`}
+          className={`max-md:bg-black max-md:w-9/12 max-md:h-screen max-md:absolute max-md:left-0 max-md:top-20  transition-transform duration-6000 ease-in-out transform ${
+            isOpen ? "max-md:translate-x-300" : "max-md:-translate-x-full"
+          }  px-4 py-2  ${isOpen ? "" : "opacity-none md:block"}`}
         >
-
-<FontAwesomeIcon
-          icon={faClose}
-          
-          className="bold text-white cursor-pointer font-bold text-2xl md:hidden absolute right-8 top-4"
-          onClick={toggleMenu}
-        />
-            
-
+          <FontAwesomeIcon
+            icon={faClose}
+            className="bold text-white cursor-pointer font-bold text-2xl md:hidden absolute right-8 top-4"
+            onClick={toggleMenu}
+          />
 
           <ul
-            className={` flex flex-row w-auto text-center rounded-md  justify-evenly  w-96 max-md:flex-col max-md:absolute max-md:left-0 max-md:top-20 max-md:w-64 max-md:h-auto max-md:text-left transition-transform duration-6000 ease-in-out transform ${isOpen ? "max-md:translate-x-300" : "max-md:-translate-x-full"
-              }  px-4 py-2 rounded-md ${isOpen ? "" : "max-md:none md:block"}`}
+            className={` flex flex-row w-auto text-center rounded-md  justify-evenly  w-96 max-md:flex-col max-md:absolute max-md:left-0 max-md:top-20 max-md:w-64 max-md:h-auto max-md:text-left transition-transform duration-6000 ease-in-out transform ${
+              isOpen ? "max-md:translate-x-300" : "max-md:-translate-x-full"
+            }  px-4 py-2 rounded-md ${isOpen ? "" : "max-md:none md:block"}`}
           >
             <li className="m-3 inline-block text-white max-md:ml-20">
               <Link href="/">Home</Link>
@@ -64,8 +61,9 @@ export default function Navbar() {
         </div>
 
         <div
-          className={` md:flex w-auto max-md:mt-56 max-md:absolute max-md:top-40 max-md:left-4 transition-transform duration-6000 ease-in-out transform ${isOpen ? "max-md:translate-x-0" : "max-md:-translate-x-full"
-            }  px-4 py-2 rounded-md ${isOpen ? "" : "opacity-none md:block"}`}
+          className={` md:flex w-auto max-md:mt-56 max-md:absolute max-md:top-40 max-md:left-4 transition-transform duration-6000 ease-in-out transform ${
+            isOpen ? "max-md:translate-x-0" : "max-md:-translate-x-full"
+          }  px-4 py-2 rounded-md ${isOpen ? "" : "opacity-none md:block"}`}
         >
           <button className="text-white bg-red-500 px-4 py-2 rounded-md mr-4">
             Sign Up
