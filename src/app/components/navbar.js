@@ -3,13 +3,24 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
+import { useRouter } from "next/navigation";
 export default function Navbar() {
+
+
+const router=useRouter();
+
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+
+  const goLogin=()=>{
+
+    router.push("/login")
+  }
 
   return (
     <>
@@ -68,8 +79,8 @@ export default function Navbar() {
           <button className="text-white bg-red-500 px-4 py-2 rounded-md mr-4">
             Sign Up
           </button>
-          <button className="text-white bg-red-500 px-4 py-2 rounded-md">
-            Login
+          <button className="text-white bg-red-500 px-4 py-2 rounded-md" onClick={goLogin}>
+           Login
           </button>
         </div>
       </nav>
