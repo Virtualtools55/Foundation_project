@@ -60,10 +60,13 @@ const router=useRouter();
               <Link href="/">Home</Link>
             </li>
             <li className="m-3 inline-block text-white max-md:ml-20">
-              <Link href="/">Services</Link>
+              <Link href="/">Our Mission</Link>
             </li>
             <li className="m-3 inline-block text-white max-md:ml-20">
-              <Link href="/">About</Link>
+              <Link href="/">What We Do</Link>
+            </li>
+            <li className="m-3 inline-block text-white max-md:ml-20">
+              <Link href="/">Provide help</Link>
             </li>
             <li className="m-3 inline-block text-white max-md:ml-20">
               <Link href="/">Contact</Link>
