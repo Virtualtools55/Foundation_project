@@ -21,6 +21,10 @@ const router=useRouter();
 
     router.push("/login")
   }
+  const goSignup=()=>{
+
+    router.push("/signup")
+  }
 
   return (
     <>
@@ -32,7 +36,7 @@ const router=useRouter();
         />
       </div>
 
-      <nav className="flex items-center justify-between h-20 w-screen px-8 bg-gray-500 max-md:flex-col max-md:z-10">
+      <nav className="flex items-center justify-between h-16 w-screen px-8 bg-gray-500 max-md:flex-col max-md:z-10">
         <Link
           href="/"
           className="text-white text-xl font-bold max-md:absolute max-md:left-8 max-md:top-5"
@@ -56,20 +60,20 @@ const router=useRouter();
               isOpen ? "max-md:translate-x-300" : "max-md:-translate-x-full"
             }  px-4 py-2 rounded-md ${isOpen ? "" : "max-md:none md:block"}`}
           >
-            <li className="m-3 inline-block text-white max-md:ml-20">
+            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
               <Link href="/">Home</Link>
             </li>
-            <li className="m-3 inline-block text-white max-md:ml-20">
-              <Link href="/">Our Mission</Link>
+            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
+              <Link href="/ourmission">Our Mission</Link>
             </li>
-            <li className="m-3 inline-block text-white max-md:ml-20">
+            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
               <Link href="/">What We Do</Link>
             </li>
-            <li className="m-3 inline-block text-white max-md:ml-20">
+            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
               <Link href="/">Provide help</Link>
             </li>
-            <li className="m-3 inline-block text-white max-md:ml-20">
-              <Link href="/">Contact</Link>
+            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
+              <Link href="/">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -79,7 +83,7 @@ const router=useRouter();
             isOpen ? "max-md:translate-x-0" : "max-md:-translate-x-full"
           }  px-4 py-2 rounded-md ${isOpen ? "" : "opacity-none md:block"}`}
         >
-          <button className="text-white bg-red-500 px-4 py-2 rounded-md mr-4">
+          <button className="text-white bg-red-500 px-4 py-2 rounded-md mr-4" onClick={goSignup}>
             Sign Up
           </button>
           <button className="text-white bg-red-500 px-4 py-2 rounded-md" onClick={goLogin}>

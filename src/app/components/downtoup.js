@@ -29,8 +29,9 @@ export default function DownToUp() {
           clickable: true,
         }}
         navigation={true}
+       
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper h-screen w-screen bg-red-5000"
+        className="mySwiper h-screen w-screen bg-red-5000 pointer"
       >
         <SwiperSlide className='h-screen w-screen bg-yellow-500'>Slide 1</SwiperSlide>
         <SwiperSlide className='h-screen w-screen bg-blue-500'> Slide 2</SwiperSlide>
