@@ -1,13 +1,13 @@
 import Image from "next/image";
-
-import Homeslide from "./components/Slideimage";
+import Slider from "./components/Slider";
+import Swiper from "./components/Swiper";
 
 
 
 export default function Home() {
   return (
     <main>
-     <Homeslide/>
+  <Swiper/>
     </main>
   );
 }
