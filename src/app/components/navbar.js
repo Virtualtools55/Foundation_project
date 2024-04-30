@@ -28,65 +28,65 @@ const router=useRouter();
 
   return (
     <>
-      <div className="md:hidden   absolute right-8 top-7 ">
+      <div className="lg:hidden   absolute right-8 top-5 ">
         <FontAwesomeIcon
           icon={faBars}
-          className="bold text-white cursor-pointer font-bold text-2xl"
+          className="bold text-black cursor-pointer font-bold text-2xl"
           onClick={toggleMenu}
         />
       </div>
 
-      <nav className="flex items-center justify-between h-16 w-screen px-8 bg-white max-md:flex-col max-md:z-10">
+      <nav className="flex items-center justify-between h-16 w-screen px-8 bg-white max-lg:flex-col max-lg:z-10">
         <Link
           href="/"
-          className="text-black text-xl font-bold max-md:absolute max-md:left-8 max-md:top-5"
+          className="text-black text-xl font-bold max-lg:absolute max-lg:left-8 max-lg:top-4"
         >
           logo
         </Link>
 
         <div
-          className={`max-md:bg-black max-md:w-9/12 max-md:h-screen max-md:absolute max-md:z-10  max-md:left-0 max-md:top-20  transition-transform duration-6000 ease-in-out transform ${
-            isOpen ? "max-md:translate-x-300" : "max-md:-translate-x-full"
-          }  px-4 py-2  ${isOpen ? "" : "opacity-none md:block"}`}
+          className={` max-lg:w-9/12 max-lg:h-screen max-lg:absolute max-lg:z-10  max-lg:left-0 max-lg:top-20  transition-transform duration-6000 ease-in-out transform ${
+            isOpen ? "max-lg:translate-x-300" : "max-lg:-translate-x-full"
+          }  px-4 py-2  ${isOpen ? "" : "opacity-none lg:block"}`}
         >
           <FontAwesomeIcon
             icon={faClose}
-            className="bold text-white cursor-pointer font-bold text-2xl md:hidden absolute right-8 top-4"
+            className="bold text-black cursor-pointer font-bold text-2xl lg:hidden absolute right-8 top-4"
             onClick={toggleMenu}
           />
 
           <ul
-            className={` flex flex-row w-auto text-center rounded-md   justify-evenly  w-96 max-md:flex-col max-md:absolute max-md:left-0 max-md:top-12 max-md:w-64 max-md:h-auto max-md:text-left transition-transform duration-6000 ease-in-out transform max-md:z-10 ${
-              isOpen ? "max-md:translate-x-300" : "max-md:-translate-x-full"
-            }  px-4 py-2 rounded-md ${isOpen ? "" : "max-md:none md:block"}`}
+            className={` flex flex-row w-auto text-center  justify-evenly  w-96 max-lg:flex-col max-lg:bg-gradient-to-r from-blue-300 to-blue-600 max-lg:absolute max-lg:left-0 max-lg:top-12 max-lg:w-64 max-lg:h-auto max-lg:text-left transition-transform duration-6000 ease-in-out transform max-lg:z-10 ${
+              isOpen ? "max-lg:translate-x-300" : "max-lg:-translate-x-full"
+            }  px-4 py-2 rounded-r-lg ${isOpen ? "" : "max-lg:none lg:block"}`}
           >
-            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
+            <li className="m-3 inline-block text-black max-lg:ml-20 hover:text-black">
               <Link href="/">Home</Link>
             </li>
-            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
+            <li className="m-3 inline-block text-black max-lg:ml-20 hover:text-black">
               <Link href="/ourmission">Our Mission</Link>
             </li>
-            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
+            <li className="m-3 inline-block text-black max-lg:ml-20 hover:text-black">
               <Link href="/whatwedo">What We Do</Link>
             </li>
-            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
-              <Link href="/">Provide help</Link>
+            <li className="m-3 inline-block text-black max-lg:ml-20 hover:text-black">
+              <Link href="/providehelp">Provide help</Link>
             </li>
-            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
+            <li className="m-3 inline-block text-black max-lg:ml-20 hover:text-black">
               <Link href="/contactus">Contact Us</Link>
             </li>
           </ul>
         </div>
 
         <div
-          className={` md:flex w-auto max-md:mt-56 max-md:absolute max-md:top-40 max-md:z-10 max-md:left-4 transition-transform duration-6000 ease-in-out transform ${
-            isOpen ? "max-md:translate-x-0" : "max-md:-translate-x-full"
-          }  px-4 py-2 rounded-md ${isOpen ? "" : "opacity-none md:block"}`}
+          className={` lg:flex w-auto max-lg:mt-56  max-lg:absolute max-lg:top-[180px] max-lg:z-10 max-lg:left-4 transition-transform duration-6000 ease-in-out transform ${
+            isOpen ? "max-lg:translate-x-0" : "max-lg:-translate-x-full"
+          }  px-4 py-2 rounded-lg ${isOpen ? "" : "opacity-none lg:block"}`}
         >
-          <button className="text-white bg-red-500 px-4 py-2 rounded-md mr-4" onClick={goSignup}>
+          <button className="text-white bg-gradient-to-r from-blue-300 to-blue-600 px-4 py-2 rounded-lg mr-4 transition-transform  hover:scale-105 " onClick={goSignup}>
             Sign Up
           </button>
-          <button className="text-white bg-red-500 px-4 py-2 rounded-md" onClick={goLogin}>
+          <button className="text-white bg-gradient-to-r from-blue-300 to-blue-600 px-4 py-2 rounded-lg transition-transform  hover:scale-105" onClick={goLogin}>
            Login
           </button>
         </div>

@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Footer(){
 
     return(
@@ -73,7 +75,7 @@ export default function Footer(){
             Helpful Links
           </p>
           <nav class="flex flex-col mt-4 space-y-2 text-sm text-[#2e2e2e]">
-            <a class="hover:opacity-75" href> Contact </a>
+            <Link class="hover:opacity-75" href="/contactus"> Contact </Link>
             <a class="hover:opacity-75" href> FAQs </a>
             <a class="hover:opacity-75" href> Live Chat </a>
           </nav>

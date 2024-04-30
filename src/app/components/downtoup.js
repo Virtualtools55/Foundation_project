@@ -22,8 +22,9 @@ export default function DownToUp() {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        speed={1100}
         loop={true}
+        speed={1100}
+        
        
         pagination={{
           clickable: true,

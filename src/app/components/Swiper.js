@@ -17,12 +17,21 @@ export default function App() {
   return (
     <>
       <Swiper
+      
         spaceBetween={0}
         centeredSlides={true}
+        slidesPerGroupSkip={1}
+        grabCursor={true}
+        keyboard={{
+          enabled: true,
+        }}
+       
+
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,
         }}
+        loop={true}
         pagination={{
           clickable: true,
         }}
