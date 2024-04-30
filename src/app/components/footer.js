@@ -3,12 +3,12 @@ export default function Footer(){
     return(
 
         <>
-        <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+        <footer class="inset-0 bg-gradient-to-r from-blue-300 to-blue-600  ">
   <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
       <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
-        <p class="max-w-xs mt-4 text-sm text-gray-600">
+        <p class="max-w-xs mt-4 text-sm text-[#2e2e2e]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
         </p>
         <div class="flex mt-8 space-x-6 text-gray-600">
@@ -49,7 +49,7 @@ export default function Footer(){
           <p class="font-medium">
             Company
           </p>
-          <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-[#2e2e2e]">
             <a class="hover:opacity-75" href> About </a>
             <a class="hover:opacity-75" href> Meet the Team </a>
             <a class="hover:opacity-75" href> History </a>
@@ -60,7 +60,7 @@ export default function Footer(){
           <p class="font-medium">
             Services
           </p>
-          <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-[#2e2e2e]">
             <a class="hover:opacity-75" href> 1on1 Coaching </a>
             <a class="hover:opacity-75" href> Company Review </a>
             <a class="hover:opacity-75" href> Accounts Review </a>
@@ -72,7 +72,7 @@ export default function Footer(){
           <p class="font-medium">
             Helpful Links
           </p>
-          <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-[#2e2e2e]">
             <a class="hover:opacity-75" href> Contact </a>
             <a class="hover:opacity-75" href> FAQs </a>
             <a class="hover:opacity-75" href> Live Chat </a>
@@ -82,7 +82,7 @@ export default function Footer(){
           <p class="font-medium">
             Legal
           </p>
-          <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-[#2e2e2e]">
             <a class="hover:opacity-75" href> Privacy Policy </a>
             <a class="hover:opacity-75" href> Terms &amp; Conditions </a>
             <a class="hover:opacity-75" href> Returns Policy </a>
@@ -91,7 +91,7 @@ export default function Footer(){
         </div>
       </div>
     </div>
-    <p class="mt-8 text-xs text-gray-800">
+    <p class="mt-8 text-xs text-[#2e2e2e]">
       © 2022 Comany Name
     </p>
   </div>

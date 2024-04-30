@@ -36,7 +36,8 @@ export default function App() {
             disableOnInteraction: false,
           }}
           loop={true}
-        scrollbar={true}
+          speed={1050}
+        // scrollbar={true}
         navigation={true}
         pagination={{
           clickable: true,

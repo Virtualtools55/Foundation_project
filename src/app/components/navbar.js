@@ -36,10 +36,10 @@ const router=useRouter();
         />
       </div>
 
-      <nav className="flex items-center justify-between h-16 w-screen px-8 bg-gray-500 max-md:flex-col max-md:z-10">
+      <nav className="flex items-center justify-between h-16 w-screen px-8 bg-white max-md:flex-col max-md:z-10">
         <Link
           href="/"
-          className="text-white text-xl font-bold max-md:absolute max-md:left-8 max-md:top-5"
+          className="text-black text-xl font-bold max-md:absolute max-md:left-8 max-md:top-5"
         >
           logo
         </Link>
@@ -60,20 +60,20 @@ const router=useRouter();
               isOpen ? "max-md:translate-x-300" : "max-md:-translate-x-full"
             }  px-4 py-2 rounded-md ${isOpen ? "" : "max-md:none md:block"}`}
           >
-            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
+            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
               <Link href="/">Home</Link>
             </li>
-            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
+            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
               <Link href="/ourmission">Our Mission</Link>
             </li>
-            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
-              <Link href="/">What We Do</Link>
+            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
+              <Link href="/whatwedo">What We Do</Link>
             </li>
-            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
+            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
               <Link href="/">Provide help</Link>
             </li>
-            <li className="m-3 inline-block text-white max-md:ml-20 hover:text-black">
-              <Link href="/">Contact Us</Link>
+            <li className="m-3 inline-block text-black max-md:ml-20 hover:text-black">
+              <Link href="/contactus">Contact Us</Link>
             </li>
           </ul>
         </div>
